@@ -1,0 +1,5 @@
+# Überblick
+
+In den letzten Jahren sind frontend-lastige Frameworks wie React und Angular zunehmend populär geworden. Sie bieten einen großen Mehrwert beim Aufbau komplexer Webanwendungen, bringen aber auch viel Komplexität mit sich. In vielen Szenarien sind sie nicht das richtige Werkzeug für die Aufgabe. Template-Engines sind eine hervorragende Wahl, wenn eine Anwendung keine umfangreiche dynamische Benutzeroberfläche benötigt. Dann kommen ihr geringer Overhead und ihre einfache Handhabung besonders gut zur Geltung. In dieser Einheit lernst du, wie man Nunjucks verwendet, um eine einfache Webanwendung mit Express zu bauen.
+
+Nunjucks ist eine leistungsstarke und weit verbreitete Node.js-Template-Engine, die von Mozilla entwickelt wurde. Die Templating-Syntax folgt weit verbreiteten Standards, was bedeutet, dass die Kernkonzepte auf andere beliebte Engines übertragbar sind – etwa Jinja2 in Python oder Twig in PHP. Am Ende wirst du wissen, was diese rätselhaften Symbole wie `{{ }}` und `{% %}` bedeuten und bewirken.
