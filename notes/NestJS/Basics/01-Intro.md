@@ -1,0 +1,11 @@
+# NestJS – Überblick
+
+Express gibt dir einen Request/Response-Zyklus – und kaum mehr. Routing, Middleware, Struktur: All das entscheidest du selbst. Für kleine Projekte funktioniert diese Freiheit gut, aber in einem großen Team und einer Codebasis, die ein einzelner Entwickler nicht mehr vollständig überblicken kann, ist ein strukturierterer Ansatz notwendig. Ohne ihn treffen verschiedene Teams unterschiedliche Entscheidungen darüber, wo Logik angesiedelt ist, wie Komponenten ihre Abhängigkeiten finden und wie Dateien organisiert sind. Das Ergebnis sind Anwendungen, die schwer zu navigieren – und noch schwerer zu testen – sind.
+
+**NestJS** ist ein Node.js-Framework, das auf Express (oder optional Fastify) aufbaut und diese Fragen von Anfang an beantwortet. Es definiert eine klare Struktur, die auf drei Bausteinen basiert – **Module**, **Controller** und **Provider** – und erzwingt diese Struktur durch TypeScript-Decorators. Eine mit `@Controller()` annotierte Klasse ist ein Controller. Eine mit `@Injectable()` annotierte Klasse ist ein Provider, den das Framework automatisch verwalten und anderen Komponenten bereitstellen kann.
+
+Diese automatische Bereitstellung von Abhängigkeiten erfolgt über ein **Dependency-Injection-Framework** – das zentrale Konzept dieser Einheit. In NestJS erstellt eine Klasse die Dinge, von denen sie abhängt, nicht selbst. Sie deklariert, was sie in ihrem Konstruktor benötigt, und das Framework löst diese Abhängigkeiten auf und stellt sie bereit. Das hält Komponenten lose gekoppelt: Sie wissen nicht und müssen nicht wissen, wie ihre Abhängigkeiten aufgebaut sind – nur, dass sie existieren.
+
+**Decorators** sind das Sprachmerkmal, das all das möglich macht. Es sind Annotationen, die auf einer Klasse oder Methode platziert werden und die NestJS beim Start liest, um zu verstehen, welche Rolle jedes Teil spielt und wie alles miteinander verdrahtet wird. Mit Decorators vertraut zu werden ist die Hauptherausforderung dieser Einheit. Sobald das Muster verstanden ist, ergibt sich der Rest des Frameworks ganz natürlich.
+
+Die Einheit endet mit einer minimalen, aber vollständigen NestJS-Anwendung: ein Service, ein Controller und ein Modul – alles in einer einzigen Datei. Module, Services und Repositories werden in der nächsten Einheit ausführlich behandelt.
